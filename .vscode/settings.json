@@ -1,0 +1,54 @@
+{
+    //% Restore Terminals
+    "restoreTerminals.runOnStartup": true,
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": true,
+                    "name": "Artisan",
+                    "commands": [
+                        "php artisan serve",
+                    ]
+                },
+                {
+                    "shouldRunCommands": true,
+                    "name": "Vite",
+                    "commands": [
+                        "npm run dev",
+                    ]
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": false,
+                    "name": "Database",
+                    "commands": [
+                        "sqlite3 database/database.sqlite",
+                    ]
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": true,
+                    "name": "Git",
+                    "commands": [
+                        "git branch",
+                    ]
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "shouldRunCommands": false,
+                    "name": "Terminal",
+                }
+            ]
+        },
+    ]
+}
